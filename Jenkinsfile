@@ -5,9 +5,9 @@ pipeline {
    stages {
       stage('Hello') {
          steps {
-            cd /home/ec2-user
             echo 'Hello Samus'
-            mkdir samus_dir 
+            sh 'chmod +x ./start.sh'
+            sh  'start.sh'
          }
       }
    }
