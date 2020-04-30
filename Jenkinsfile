@@ -6,8 +6,8 @@ pipeline {
       stage('Hello') {
          steps {
             echo 'Hello Samus'
-            sh 'chmod +x ./start.sh'
-            sh  'start.sh'
+            sh('chmod +x ./start.sh')
+            sh ('start.sh')
          }
       }
    }
